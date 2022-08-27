@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="332.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.yamaxila.cifrazia.ui.windows.MainWindow">
+   <children>
+      <TextField fx:id="login" layoutX="21.0" layoutY="35.0" promptText="login" />
+      <PasswordField fx:id="password" layoutX="21.0" layoutY="64.0" promptText="password" />
+
+      <Button layoutX="21.0" layoutY="119.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <ChoiceBox fx:id="serverList" layoutX="21.0" layoutY="93.0" prefHeight="26.0" prefWidth="162.0" />
+
+      <CheckBox layoutX="21.0" layoutY="154.0" mnemonicParsing="false" text="Update" />
+      <Label fx:id="status" layoutX="14.0" layoutY="300.0" text="Status" />
+      <ListView fx:id="players" layoutX="200.0" layoutY="33.0" prefHeight="259.0" prefWidth="200.0" />
+      <Label layoutX="239.0" layoutY="14.0" text="Servers Information" />
+      <ProgressBar fx:id="progress" layoutX="21.0" layoutY="180.0" prefHeight="20.0" prefWidth="162.0" progress="0.0" />
+<!--      <Slider fx:id="ram" blockIncrement="256.0" layoutX="415.0" layoutY="48.0" majorTickUnit="512.0" max="8192.0" min="1536.0" minorTickCount="1" prefHeight="16.0" prefWidth="179.0" showTickLabels="true" showTickMarks="true" value="2048.0" />-->
+<!--      <Label layoutX="458.0" layoutY="14.0" text="Simple settings" />-->
+<!--      <Button layoutX="415.0" layoutY="93.0" mnemonicParsing="false" onAction="#saveSettings" prefHeight="28.0" prefWidth="53.0" text="Save" />-->
+
+   </children>
+</AnchorPane>

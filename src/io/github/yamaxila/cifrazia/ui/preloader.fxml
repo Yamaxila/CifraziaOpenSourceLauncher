@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="261.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.yamaxila.cifrazia.ui.windows.PreloaderWindow">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="14.0" prefHeight="18.0" prefWidth="261.0" text="CIFRAZIA 1.12.2 library path" />
+      <TextField fx:id="libs_path" layoutX="31.0" layoutY="40.0" prefHeight="26.0" prefWidth="171.0" promptText="path" text="C:/Cifrazia/games/Minecraft/1.12.2/libraries" />
+      <Button layoutX="202.0" layoutY="40.0" mnemonicParsing="false" onAction="#selectPath" text="..." />
+      <Slider fx:id="ram" blockIncrement="512.0" layoutX="31.0" layoutY="98.0" majorTickUnit="512.0" max="8192.0" min="1024.0" minorTickCount="1" prefHeight="16.0" prefWidth="200.0" showTickLabels="true" showTickMarks="true" value="2048.0" />
+      <Label alignment="CENTER" layoutY="74.0" prefHeight="18.0" prefWidth="261.0" text="Minecraft RAM" />
+      <TextField fx:id="server1host" alignment="CENTER" layoutX="51.0" layoutY="168.0" promptText="server1 host" />
+      <TextField fx:id="server1port" alignment="CENTER" layoutX="51.0" layoutY="196.0" promptText="server1 port" />
+      <TextField fx:id="server1secret" alignment="CENTER" layoutX="51.0" layoutY="224.0" promptText="server1 secret" />
+      <TextField fx:id="server2host" alignment="CENTER" layoutX="51.0" layoutY="276.0" promptText="server2 host" />
+      <TextField fx:id="server2port" alignment="CENTER" layoutX="51.0" layoutY="304.0" promptText="server2 port" />
+      <TextField fx:id="server2secret" alignment="CENTER" layoutX="51.0" layoutY="332.0" promptText="server2 secret" />
+      <Button layoutX="109.0" layoutY="363.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Label alignment="CENTER" layoutY="138.0" prefHeight="18.0" prefWidth="261.0" text="Launcher Server data" />
+      <Label alignment="CENTER" layoutX="5.0" layoutY="254.0" prefHeight="18.0" prefWidth="261.0" text="Game Server data" />
+   </children>
+</AnchorPane>
