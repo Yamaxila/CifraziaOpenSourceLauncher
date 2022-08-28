@@ -8,6 +8,7 @@ import io.github.yamaxila.cifrazia.utils.LauncherUtils;
 import io.github.yamaxila.cifrazia.utils.SecurityUtils;
 import io.github.yamaxila.cifrazia.utils.SimpleConfigUtils;
 import io.github.yamaxila.core.utils.Logger;
+import io.github.yamaxila.core.utils.OsUtils;
 
 import javax.swing.*;
 import java.io.File;
@@ -128,7 +129,8 @@ public class GameLauncher {
     }
 
     private static String convertClassPath(List<File> files) {
-        return files.stream().map(file -> file.getAbsolutePath() + ":").collect(Collectors.joining());
+        String separator = OsUtils.getOS() == OsUtils.OS.WINDOWS ? ";" : ":";
+        return files.stream().map(file -> file.getAbsolutePath() + separator).collect(Collectors.joining());
     }
 
     public static boolean isGameRunning() {
