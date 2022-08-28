@@ -49,7 +49,8 @@ public class LauncherUtils {
             params.add("-Djdk.gtk.version=2");
 
         params.add("-classpath");
-        params.add("./Core.jar:" + LauncherUtils.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath());
+        String separator = OsUtils.getOS() == OsUtils.OS.WINDOWS ? ";" : ":";
+        params.add("./Core.jar" + separator + LauncherUtils.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath());
         params.add("io.github.yamaxila.cifrazia.Main");
         params.add(libsPath.getAbsolutePath());
 
